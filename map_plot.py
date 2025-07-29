@@ -5,6 +5,9 @@ import time
 geolocator = Nominatim(user_agent="csv-mapper")
 map = folium.Map(location=[42.8864, -78.8784], zoom_start=6)
 
+
+
+
 with open("addresses.txt") as f:
     for line in f:
         try:
